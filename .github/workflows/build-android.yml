@@ -53,6 +53,10 @@ jobs:
           restore-keys: |
             gradle-${{ runner.os }}-
 
+      - name: Installation des dépendances Capacitor
+        working-directory: app
+        run: npm install
+
       - name: Initialisation Capacitor Android
         working-directory: app
         run: |
