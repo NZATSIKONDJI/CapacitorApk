@@ -14,6 +14,8 @@ jobs:
   build-android:
     name: Build APK Android
     runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
       - name: Checkout du code
         uses: actions/checkout@v4
@@ -37,8 +39,11 @@ jobs:
       - name: Configuration Android SDK
         uses: android-actions/setup-android@v3
         with:
-          api-level: 34
-          build-tools: '34.0.0'
+          cmdline-tools-version: '11.0.0'
+          packages: |
+            platform-tools
+            platforms;android-34
+            build-tools;34.0.0
           accept-android-sdk-licenses: true
 
       - name: Cache Gradle
