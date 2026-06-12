@@ -1,3 +1,24 @@
+# Dépendances
+node_modules/
+app/node_modules/
+
+# Build Next.js
+app/.next/
+app/out/
+
+# Généré automatiquement
+generated/
+
+# Android Studio
+*.iml
+.gradle/
+local.properties
+.idea/
+*.keystore
+
+# Variables d'environnement
+.env
+.env.local
 # Node modules
 node_modules/
 app/node_modules/
