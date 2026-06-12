@@ -1,0 +1,8 @@
+{
+  "appId": "com.monentreprise.monapp",
+  "appName": "MonAppMetier",
+  "webDir": "out",
+  "server": {
+    "androidScheme": "https"
+  }
+}
